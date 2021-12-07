@@ -126,3 +126,60 @@ $ serverless deploy --stage local
 The result should be similar to:
 
 <img src="./Assets/Output.png">
+
+## Usage
+
+The following commands allow you to create, retrieve, update, and delete customers:
+
+#### Create Customer
+```
+$ curl -X POST http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers --data '{"firstName":"Cem","lastName":"ALTUNER"}'
+```
+
+The expected output :
+```
+{"id": "481afda4-5735-11ec-95a5-11b91c95714f", "firstName": "Cem", "lastName": "ALTUNER", "createdAt": "1638864689.6023037", "updatedAt": "1638864689.6023037"}
+```
+
+####  Get Customer
+```
+$ curl -X GET http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
+```
+
+The expected output :
+```
+{"firstName": "Cem", "lastName": "ALTUNER", "createdAt": "1638864689.6023037", "id": "481afda4-5735-11ec-95a5-11b91c95714f", "updatedAt": "1638864689.6023037"}
+```
+
+####  Update Customer
+```
+$ curl -X PUT http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f --data '{"firstName":"Can","lastName":"Sanli"}'
+```
+
+The expected output :
+```
+{"createdAt": "1638864689.6023037", "firstName": "Can", "lastName": "Sanli", "id": "481afda4-5735-11ec-95a5-11b91c95714f", "updatedAt": "1638864948.3040314"}
+```
+
+####  List Customers
+```
+$ curl -X GET http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers
+```
+
+The expected output :
+```
+[{"firstName": "Cem", "lastName": "ALTUNER", "createdAt": "1638865007.5402353", "id": "05994b8f-5736-11ec-ab31-11b91c95714f", "updatedAt": "1638865007.5402353"}, {"createdAt": "1638864689.6023037", "firstName": "Can", "lastName": "Sanli", "id": "481afda4-5735-11ec-95a5-11b91c95714f", "updatedAt": "1638864948.3040314"}]
+```
+
+####  Delete Customer
+```
+$ curl -X DELETE http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
+```
+
+No output for this operation.
+
+
+
+
+
+
