@@ -133,7 +133,7 @@ The following commands allow you to create, retrieve, update, and delete custome
 
 #### Create Customer
 ```
-$ curl -X POST http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers --data '{"firstName":"Cem","lastName":"ALTUNER"}'
+$ curl -X POST http://localhost:4566/restapis/mpua1j3zjk/local/_user_request_/customers --data '{"firstName":"Cem","lastName":"ALTUNER"}'
 ```
 
 The expected output :
@@ -143,7 +143,7 @@ The expected output :
 
 ####  Get Customer
 ```
-$ curl -X GET http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
+$ curl -X GET http://localhost:4566/restapis/mpua1j3zjk/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
 ```
 
 The expected output :
@@ -153,7 +153,7 @@ The expected output :
 
 ####  Update Customer
 ```
-$ curl -X PUT http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f --data '{"firstName":"Can","lastName":"Sanli"}'
+$ curl -X PUT http://localhost:4566/restapis/mpua1j3zjk/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f --data '{"firstName":"Can","lastName":"Sanli"}'
 ```
 
 The expected output :
@@ -163,7 +163,7 @@ The expected output :
 
 ####  List Customers
 ```
-$ curl -X GET http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers
+$ curl -X GET http://localhost:4566/restapis/mpua1j3zjk/local/_user_request_/customers
 ```
 
 The expected output :
@@ -173,7 +173,7 @@ The expected output :
 
 ####  Delete Customer
 ```
-$ curl -X DELETE http://localhost:4566/restapis/immbraleqh/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
+$ curl -X DELETE http://localhost:4566/restapis/mpua1j3zjk/local/_user_request_/customers/481afda4-5735-11ec-95a5-11b91c95714f
 ```
 
 No output for this operation.
